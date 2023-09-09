@@ -1,0 +1,206 @@
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.main-btn {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.main-btn:hover{
+    color: var(--yellow-color);
+}
+.main-title p::after{
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+/* Start Navbar */
+.navbar {
+    background-color: var(--dark-color);
+}
+.navbar .nav-item a{
+    color: white;
+}
+.navbar .nav-item a.active,
+.navbar .nav-item a:focus,
+.navbar .nav-item a:hover{
+    color: var(--green-color);
+}
+.navbar .navbar-toggler svg {
+    color: white;
+}
+.navbar .navbar-toggler{
+    border: 1px solid white;
+}
+.navbar .navbar-toggler[aria-expanded="true"]{
+    border-color: var(--green-color);
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar .search {
+    border-left: 1px solid var(--green-color);
+    color: var(--green-color);
+}
+/* End Navbar */
+/* Start landing */
+.landing {
+    min-height: calc(100vh - 72px);
+    background-color: var(--dark-color);
+}
+/* End landing */
+/* Start Features */
+.feat .icon{
+    height: 200px;
+}
+.feature .feat .icon svg{
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.icon .number{
+    z-index: -1;
+    font-size: 12rem;
+    color: var(--section-color);
+}
+.icon .myicon{
+    color: var(--green-color);
+    font-size: 4em;
+}
+/* End Features */
+/* Start Our Work */
+.our-work {
+    background-color: var(--section-color);
+}
+.our-work .myList li{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.our-work .myList li.active {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.our-work .myList li:not(:first-child):hover {
+    color: var(--red-color);
+}
+.our-work .work {
+    padding: 5px;
+    overflow: hidden;
+}
+.our-work .work::after{
+    content: attr(data-text);
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: rgb(51 209 204 / 76%);
+    left: -100%;
+    top: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.our-work .work:hover::after{
+    left: 5px;
+}
+/* End Our Work */
+/* Start Stuff */
+.stuff .stuff-text{
+    max-width: 500px;
+}
+/* End Stuff */
+/* Start Team */
+.team {
+    background-color: var(--section-color);
+}
+.team h2{
+    color: var(--yellow-color);
+}
+.team .member img{
+    width: 100%;
+    height: 50%;
+}
+.team h4{
+    background-color: var(--green-color);
+}
+/* End Team */
+/* Start Project */
+.proj {
+    background-color: var(--dark-color);
+}
+/* End Project */
+/* Start Blog */
+.blog .box{
+    border: 1px solid rgba(0,0,0,.125);
+}
+/* End Blog */
+/* Start News */
+.news {
+    background-color: var(--yellow-color);
+}
+.news .inp {
+    border-bottom: 1px solid white;
+}
+.news .inp input{
+    outline: none;
+}
+.news .inp input::placeholder{
+    color: white;
+}
+.news .link a{
+    background-color: var(--dark-color);
+}
+/* End News */
+/* Start Footer */
+.foot {
+    background-color: var(--dark-color);
+}
+.foot .gre {
+    color: var(--green-color);
+}
+.foot .yel {
+    color: var(--yellow-color);
+}
+.foot .social svg {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+.foot .social .face {
+    background-color: #1877f2;
+}
+.foot .social .twi {
+    background-color: #1da1f2;
+}
+.foot .social .lin {
+    background-color: #0077b5;
+}
+.foot .social .you {
+    background-color: #ff0000;
+}
+/* End Footer */
